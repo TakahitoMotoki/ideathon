@@ -112,12 +112,6 @@ footer {
 }
 // MARK: - Footer End
 
-// MARK: - Debug Start
-.debug-border {
-  border: 1px solid #000;
-}
-// MARK: - Debug End]
-
 // MARK: - CSS for Form Start
 .background {
   background: rgba(224, 255, 234, 1);
@@ -160,6 +154,12 @@ footer {
 // MARK: - CSS for Form End
 
 // MARK: - CSS for Home Start
+// MARK: - Home Header Start
+.my-dropdown-menu {
+  position: relative;
+  left: -175px;
+}
+
 .small-profile {
   width: 100%;
   padding-left: 20px;
@@ -171,12 +171,121 @@ footer {
 .icon-container {
   width: 96px;
   height: 96px;
-  background: #f00;
 }
-
-
 
 .small-profile-name {
   width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .icon-container {
+    width: 64px;
+    height: 64px;
+  }
+}
+// MARK: - Home Header End
+.timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+// MARK: - Home Left Content Start
+.left-content {
+  width: 70%;
+  padding-top: 100px;
+  background: rgba(214, 214, 255, 1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bcard {
+  width: 90%;
+  border: 1px solid rgba(127, 127, 255, 1);
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bcard-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.bcard-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 28px;
+}
+
+.bcard-name {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bcard-island {
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.bcard-text {
+  font-size: 18px;
+}
+
+.bcard-image {
+  height: 300px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bcard-button-container {
+  width: 100%;
+}
+
+.counter {
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .left-content {
+    width: 100%;
+  }
+}
+// MARK: - Home Left Content End
+
+// MARK: - Home Right Content Start
+.right-content {
+  width: 30%;
+  height: 1000px;
+}
+
+@media screen and (max-width: 576px) {
+  .right-content {
+    display: none;
+  }
+}
+// MARK: - Home Right Content End
 // MARK: - CSS for Home End
+
+// MARK: - Debug Start
+.debug-border {
+  border: 1px solid #000;
+}
+
+.debug-background {
+  background: #f00;
+}
+
+.debug-background2 {
+  background: #0f0;
+}
+
+.debug-background3 {
+  background: rgba(66, 66, 66, 0.4);
+}
+// MARK: - Debug End]

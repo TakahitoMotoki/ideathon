@@ -1,0 +1,2 @@
+class Wannado < ApplicationRecord
+end

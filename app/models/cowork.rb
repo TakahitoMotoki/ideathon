@@ -1,0 +1,2 @@
+class Cowork < ApplicationRecord
+end

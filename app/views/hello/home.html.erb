@@ -9,17 +9,17 @@
         <div class="dropdown">
           <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">Menu
           <span class="caret"></span></button>
-          <ul class="dropdown-menu" style="width: 250px;">
+          <ul class="dropdown-menu my-dropdown-menu" style="width: 250px;">
             <div class="small-profile">
-              <div class="icon-container">
+              <div class="icon-container debug-background">
               </div>
               <div class="small-profile-name">
-                <p>Takatito Motoki</p>
-                <p>@MotokiTakahito</p>
+                <p style="font-size:16px;margin-top:5px;">Takatito Motoki</p>
+                <p style="font-size:12px;">@MotokiTakahito</p>
               </div>
             </div>
-            <li><a href="#">My Island</a></li>
-            <li><a href="#">Setting</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Ranking</a></li>
             <li><a href="#">Logout</a></li>
           </ul>
         </div>
@@ -27,3 +27,57 @@
     </div>
   </div>
 </header>
+
+<section class="timeline">
+  <div class="left-content">
+    <% for number in 1..10 do %>
+      <div class="bcard">
+        <div class="bcard-top">
+          <div class="bcard-icon debug-background2">
+          </div>
+          <div class="bcard-name">
+            <p class="bcard-island">
+              <b>Luida's Bar</b><br>
+              <span style="font-size:16px;line-height:16px;">Address: Lauresia / Takahito Motoki</span>
+            </p>
+          </div>
+        </div>
+        <p class="bcard-text">
+          Luida's Bar is a place where everyone can find friends from many country, affliation, occupation.
+          We can drink many kinds of alchole and have fun talking.
+          <br>
+          みんなで楽しもう!
+        </p>
+        <div class="bcard-image debug-background3">
+        </div>
+        <div class="bcard-button-container container">
+          <div class="row">
+            <div class="col-xs-4 btn">
+              Wanna Do!
+            </div>
+            <div class="col-xs-4 btn">
+              Like
+            </div>
+            <div class="col-xs-4 btn">
+              Comment
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 counter">
+              5
+            </div>
+            <div class="col-xs-4 counter">
+              34
+            </div>
+            <div class="col-xs-4 counter">
+              12
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="right-content">
+  </div>
+</section>
