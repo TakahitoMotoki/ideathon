@@ -1,0 +1,31 @@
+<header>
+  <div class="container">
+    <div class="row header-container">
+      <div class="title col-md-5 col-xs-8">
+        Idea Land
+      </div>
+      <div class="col-md-5 col-xs-0"></div>
+      <div class="col-md-2 col-xs-4">
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">Menu
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu my-dropdown-menu" style="width: 250px;">
+            <div class="small-profile">
+              <div class="icon-container debug-background">
+              </div>
+              <div class="small-profile-name">
+                <p style="font-size:16px;margin-top:5px;">Takatito Motoki</p>
+                <p style="font-size:12px;">@MotokiTakahito</p>
+              </div>
+            </div>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Ranking</a></li>
+            <li><%= link_to "Logout", { :controller => "users/sessions", :action => "destroy"}, :method => :delete %></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+  </div>
+</header>
+
+Ranking

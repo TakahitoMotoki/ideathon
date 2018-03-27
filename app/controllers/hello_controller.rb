@@ -6,4 +6,10 @@ class HelloController < ApplicationController
 
   def home
   end
+
+  def profile
+  end
+
+  def ranking
+  end
 end

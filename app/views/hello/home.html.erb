@@ -18,9 +18,9 @@
                 <p style="font-size:12px;">@MotokiTakahito</p>
               </div>
             </div>
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Ranking</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><%= link_to "My Profile", { :controller => "hello", :action => "profile"}, :method => :get %></li>
+            <li><%= link_to "Ranking", { :controller => "hello", :action => "ranking"}, :method => :get %></li>
+            <li><%= link_to "Logout", { :controller => "users/sessions", :action => "destroy"}, :method => :delete %></li>
           </ul>
         </div>
     </div>
