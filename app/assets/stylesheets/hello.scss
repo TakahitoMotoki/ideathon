@@ -1,0 +1,26 @@
+* {
+  font-family: 'Press Start 2P', cursive;;
+}
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.title-container {
+  background-image: url("/assets/");
+  font-size: 60px;
+  font-family: 'Press Start 2P', cursive;;
+  text-align: center;
+}
+
+.dis-md {
+  
+}
+
+// MARK: - For Debug
+.debug-border {
+  border: 1px solid #000;
+}
