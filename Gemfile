@@ -55,7 +55,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gems
 gem 'devise'
+
+# Gems for Bootstrap
 gem 'bootstrap-sass'
+gem 'sprockets-rails'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'jquery-rails'
 
 # Gems for Heroku
 gem 'pg', group: :production

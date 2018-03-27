@@ -158,3 +158,25 @@ footer {
   }
 }
 // MARK: - CSS for Form End
+
+// MARK: - CSS for Home Start
+.small-profile {
+  width: 100%;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-container {
+  width: 96px;
+  height: 96px;
+  background: #f00;
+}
+
+
+
+.small-profile-name {
+  width: 100%;
+}
+// MARK: - CSS for Home End
