@@ -4,7 +4,6 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   # MARK: - Setup for Omniauth-Facebook
-  config.omniauth :facebook, '174198553154948', '083d2d3dcacaef98baa185bc81075edd'
 
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing

@@ -5,7 +5,7 @@
         Idea Land
       </div>
       <div class="col-md-5 col-xs-0"></div>
-      <%= button_to "Login", {:controller => "users/omniauth_callbacks", :action => "passthru"}, :class => "login-btn col-md-2 col-xs-3 btn btn-primary" %>
+      <%= button_to "Login", {:controller => "hello", :action => "home" }, :class => "login-btn col-md-2 col-xs-3 btn btn-primary", :method => :get %>
     </div>
   </div>
 </header>

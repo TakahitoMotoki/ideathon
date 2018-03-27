@@ -116,4 +116,45 @@ footer {
 .debug-border {
   border: 1px solid #000;
 }
-// MARK: - Debug End
+// MARK: - Debug End]
+
+// MARK: - CSS for Form Start
+.background {
+  background: rgba(224, 255, 234, 1);
+  padding: 150px 0;
+  padding-bottom: 250px;
+}
+
+.form-container {
+  width: 60%;
+  padding: 50px 20px;
+  margin: auto auto;
+}
+
+.field-container {
+  margin-top: 20px;
+}
+
+.login-btn {
+  margin-bottom: 40px;
+}
+
+.signup-btn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .background {
+    background: rgba(224, 255, 234, 1);
+    padding: 100px 0;
+    padding-bottom: 150px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 50px 10px;
+    margin: auto auto;
+  }
+}
+// MARK: - CSS for Form End
