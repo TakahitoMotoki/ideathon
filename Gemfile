@@ -59,3 +59,7 @@ gem 'bootstrap-sass'
 
 # Gems for Heroku
 gem 'pg', group: :production
+
+# Gems for Facebook
+gem 'omniauth'
+gem 'omniauth-facebook'
