@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Title:</strong>
   <%= @building.title %>
@@ -25,4 +23,6 @@
   <%= @building.deadline %>
 </p>
 
-<%= link_to 'Back', { :controller => "hello", :action => "home"} %>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>

@@ -24,10 +24,10 @@
   </section>
 
   <section class="second-block">
-    <p class="second-title">
+    <p class="second-title fuwat">
       <b>Make Your Own Islands!</b>
     </p>
-    <p class="second-text">
+    <p class="second-text fuwat">
       By constructing your fantastical Buildings on your Island, You can enrich your Island and attract more people!
     </p>
 
@@ -35,10 +35,10 @@
   </section>
 
   <section class="third-block">
-    <p class="third-title">
+    <p class="third-title fuwat">
       <b>Co-Work with other people!</b>
     </p>
-    <p class="third-text">
+    <p class="third-text fuwat">
       If you like other person's Building, you can Co-Work to build it!<br>
       When you push Co-Work button, notification will send to the Building Owner.<br>
       And if the owner would like to work with you, message will come to you by Messanger.
@@ -48,10 +48,10 @@
   </section>
 
   <section class="fourth-block">
-    <p class="fourth-title">
+    <p class="fourth-title fuwat">
       <b>Be a Resident!</b>
     </p>
-    <p class="fourth-text">
+    <p class="fourth-text fuwat">
       If you really like someone's Island, you can be registered as a Tourist in the Island.<br>
       After the registration, you can receive notification and get information about the Island more quickly.
     </p>
@@ -63,3 +63,19 @@
 <footer>
   ©️Takahito Motoki(@MotokiTakahito for Twitter)
 </footer>
+
+<script>
+$(document).ready(function(){
+  $('.fuwat').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.fuwat').each(function(){
+    var objectPosition = $(this).offset().top;
+    if(topWindow > objectPosition - windowHeight + 200){
+     $(this).addClass("fuwatAnime");
+    }
+   });
+  });
+});
+</script>

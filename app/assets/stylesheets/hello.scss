@@ -1,6 +1,7 @@
 // MARK: - CSS for All Start
 * {
   font-family: 'Josefin Sans', sans-serif;
+  // これとか良い http://modi.jpn.org/font_timemachine-wa.php
 }
 // MARK: - CSS for All End
 
@@ -8,6 +9,8 @@
 header {
   height: 60px;
   width: 100%;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
   padding-top: 14px;
   background: rgba(131, 204, 210, 0.8);
   position: fixed;
@@ -202,9 +205,20 @@ footer {
 
 .bcard {
   width: 90%;
-  border: 1px solid rgba(127, 127, 255, 1);
+  border-bottom: 5px solid rgba(192, 192, 192, 1);
+  border-right: 5px solid rgba(192, 192, 192, 1);
+  border-radius: 10px;
   background: #fff;
   margin: 10px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bcard-modal {
+  width: 90%;
+  background: #fff;
+  margin: 10px auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -304,4 +318,25 @@ footer {
 .debug-background3 {
   background: rgba(66, 66, 66, 0.4);
 }
-// MARK: - Debug End]
+// MARK: - Debug End
+
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
