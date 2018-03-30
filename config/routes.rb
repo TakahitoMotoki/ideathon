@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get "hello/home" => "hello#home"
   get "hello/profile" => "hello#profile"
   get "hello/ranking" => "hello#ranking"
+  get "hello/shop" => "hello#shop"
+  get "hello/tutorial" => "hello#tutorial"
+  get "hello/introduction" => "hello#introduction"
+  get "hello/show_user/:show_user_id" => "hello#show_user", :as => "hello_show_user"
 end

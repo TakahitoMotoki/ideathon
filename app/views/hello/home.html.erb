@@ -8,7 +8,7 @@
           <div class="bcard-name">
             <p class="bcard-island">
               <b><%= link_to building.title, building, { 'data-toggle' => "modal", 'data-target' => '#exampleModalCenter'} %></b><br>
-              <span class="bcard-address">Address: <%= link_to building.island.name, building.island %> / Takahito Motoki</span>
+              <span class="bcard-address">Address: <%= link_to building.island.name, building.island %> / <%= link_to building.island.user.name, hello_show_user_path(building.island.user.id) %></span>
             </p>
           </div>
         </div>

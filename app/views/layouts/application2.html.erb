@@ -31,9 +31,12 @@
                     <p style="font-size:12px;">@MotokiTakahito</p>
                   </div>
                 </div>
-                <li><%= link_to "Timeline", { :controller => "hello", :action => "home"}, :method => :get %></li>
-                <li><%= link_to "My Profile", { :controller => "hello", :action => "profile"}, :method => :get %></li>
-                <li><%= link_to "Ranking", { :controller => "hello", :action => "ranking"}, :method => :get %></li>
+                <li><%= link_to "Timeline", { :controller => "hello", :action => "home" }, :method => :get %></li>
+                <li><%= link_to "My Profile", { :controller => "hello", :action => "profile" }, :method => :get %></li>
+                <li><%= link_to "Ranking", { :controller => "hello", :action => "ranking" }, :method => :get %></li>
+                <li><%= link_to "Shop", { :controller => "hello", :action => "shop" }, :method => :get %></li>
+                <li><%= link_to "Tutorial", { :controller => "hello", :action => "tutorial" }, :method => :get %></li>
+                <li><%= link_to "Developper Introduction", { :controller => "hello", :action => "introduction" }, :method => :get %></li>
                 <li><%= link_to "Logout", { :controller => "users/sessions", :action => "destroy"}, :method => :delete %></li>
               </ul>
             </div>

@@ -1,28 +1,48 @@
-<p>
-  <strong>Title:</strong>
-  <%= @building.title %>
-</p>
+<%
+  island_user = Island.find(@building.island.id)
+%>
 
-<p>
-  <strong>Description:</strong>
-  <%= @building.description %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @building.image %>
-</p>
-
-<p>
-  <strong>Island:</strong>
-  <%= @building.island_id %>
-</p>
-
-<p>
-  <strong>Deadline:</strong>
-  <%= @building.deadline %>
-</p>
-
+<div class="bcard-modal">
+  <div class="bcard-top">
+    <div class="bcard-icon debug-background2">
+    </div>
+    <div class="bcard-name">
+      <p class="bcard-island">
+        <b><%= @building.title %></b><br>
+        <span class="bcard-address">Address: <%= @building.island.name %> / <%= @building.island.user.name %></span>
+      </p>
+    </div>
+  </div>
+  <p class="bcard-text">
+    <%= @building.description %>
+  </p>
+  <div class="bcard-image debug-background3">
+  </div>
+  <div class="bcard-button-container container">
+    <div class="row">
+      <div class="col-xs-4 btn">
+        Wanna Do!
+      </div>
+      <div class="col-xs-4 btn">
+        Like
+      </div>
+      <div class="col-xs-4 btn">
+        Comment
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 counter">
+        5
+      </div>
+      <div class="col-xs-4 counter">
+        34
+      </div>
+      <div class="col-xs-4 counter">
+        12
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 </div>
