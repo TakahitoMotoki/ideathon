@@ -1,8 +1,70 @@
-<section class="timeline">
-  <div class="left-content">
+<div class="container" style="padding-top:150px;">
+  <div class="row show-top">
+    <div class="col-xs-12 show-top-picture-container">
+      <div class="show-top-picture debug-background">
 
+      </div>
+    </div>
+    <div class="col-xs-12 show-top-name">
+      <%= @user.name %>
+    </div>
   </div>
+  <div class="row show-profile">
+    <div class="col-xs-12 show-profile-name">
+      Description
+    </div>
+    <div class="col-xs-12 show-profile-desc">
+      <%= @user.profile %>
+    </div>
+  </div>
+  <div class="row show-island">
+    <div class="col-xs-12 show-island-name">
+      Islands
+    </div>
+    <% @user.islands.each do |island| %>
+      <div class="col-xs-1 col-md-3">
+      </div>
+      <div class="col-xs-10 col-md-6 show-island-container debug-background2">
+        <%= island.name %>
+      </div>
+      <div class="col-xs-1 col-md-3">
+      </div>
+    <% end %>
+  </div>
+  <div class="row show-resident">
+    <div class="col-xs-12 show-resident-name">
+      Residing
+    </div>
+    <!--   Debug Start   -->
+    <div class="row">
+      <div class="col-xs-1 col-md-3">
+      </div>
+      <div class="col-xs-10 col-md-6 show-island-container debug-background">
+        Luida's Bar / King
+      </div>
+      <div class="col-xs-1 col-md-3">
+      </div>
+    </div>
 
-  <div class="right-content">
+    <div class="row">
+      <div class="col-xs-1 col-md-3">
+      </div>
+      <div class="col-xs-10 col-md-6 show-island-container debug-background2">
+        Tower of Bubble / Bianca
+      </div>
+      <div class="col-xs-1 col-md-3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-1 col-md-3">
+      </div>
+      <div class="col-xs-10 col-md-6 show-island-container debug-background3">
+        Salabona / Flora
+      </div>
+      <div class="col-xs-1 col-md-3">
+      </div>
+    </div>
+    <!--   Debug End-->
   </div>
-</section>
+</div>

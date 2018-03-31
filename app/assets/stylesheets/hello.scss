@@ -9,8 +9,8 @@
 header {
   height: 60px;
   width: 100%;
-  border-bottom-right-radius: 18px;
-  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding-top: 14px;
   background: rgba(131, 204, 210, 0.8);
   position: fixed;
@@ -405,6 +405,14 @@ footer {
   }
 }
 // MARK: - CSS for ShowUser End
+
+// MARK: - CSS for Shop Start
+.shop-container {
+  font-size: 100px;
+  padding-top: 150px;
+  text-align: center;
+}
+// MARK: - CSS for Shop End
 
 // MARK: - Debug Start
 .debug-border {
