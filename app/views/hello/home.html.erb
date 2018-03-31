@@ -50,9 +50,7 @@
 </section>
 
 <!-- Button trigger modal -->
-<button type="button" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -64,13 +62,11 @@
           </div>
           <div class="bcard-name">
             <p class="bcard-island">
-              <b><%= link_to @buildings[0].title, @buildings[0] %></b><br>
-              <span class="bcard-address">Address: <%= link_to @buildings[0].island.name, @buildings[0].island %> / Takahito Motoki</span>
+              <span class="bcard-address"></span>
             </p>
           </div>
         </div>
         <p class="bcard-text">
-          <%= @buildings[0].description %>
         </p>
         <div class="bcard-image debug-background3">
         </div>
