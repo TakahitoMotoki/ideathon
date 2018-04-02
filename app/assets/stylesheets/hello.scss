@@ -39,7 +39,7 @@ header {
   font-size: 16px;
   color: #000;
 
-  padding: 100px 25px;
+  padding: 200px 25px;
   padding-bottom: 120px;
 }
 
@@ -58,7 +58,7 @@ header {
   font-size: 16px;
   color: #000;
 
-  padding: 120px 25px;
+  padding: 160px 25px;
 }
 
 .second-title {
@@ -75,7 +75,7 @@ header {
   font-size: 16px;
   color: #000;
 
-  padding: 120px 25px;
+  padding: 160px 25px;
 }
 
 .third-title {
@@ -93,7 +93,7 @@ header {
   font-size: 16px;
   color: #000;
 
-  padding: 120px 25px;
+  padding: 160px 25px;
 }
 
 .fourth-title {
@@ -348,6 +348,7 @@ footer {
 
 .show-profile {
   background: #eff7ff;
+  padding: 0 20px;
 }
 
 .show-profile-name {
@@ -373,6 +374,11 @@ footer {
   font-size: 60px;
   margin-top: 100px;
   margin-bottom: 40px;
+}
+
+.show-island-container {
+  font-size: 16px;
+  height: 40px;
 }
 
 .show-resident {
@@ -408,7 +414,7 @@ footer {
 
 // MARK: - CSS for Shop Start
 .shop-container {
-  font-size: 100px;
+  font-size: 60px;
   padding-top: 150px;
   text-align: center;
 }
