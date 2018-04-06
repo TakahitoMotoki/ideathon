@@ -36,11 +36,19 @@ header {
 
 // MARK: - First Block Start
 .first-block {
+  background: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   color: #000;
 
   padding: 200px 25px;
   padding-bottom: 120px;
+}
+
+.first-block-img {
+  width: 100%;
+  height: 700px;
+  position: fixed;
+  z-index: -1;
 }
 
 .first-title {
@@ -72,6 +80,7 @@ header {
 
 // MARK: - Third Block Start
 .third-block {
+  background: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   color: #000;
 
@@ -418,7 +427,29 @@ footer {
   padding-top: 150px;
   text-align: center;
 }
+
+@media screen and (max-width: 576px) {
+  .shop-container {
+    font-size: 40px;
+  }
+}
 // MARK: - CSS for Shop End
+
+// MARK: - CSS for Intro Start
+.intro-container {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
+// MARK: - CSS for Intro End
+
+// MARK: - CSS for Edit User Start
+.update-btn {
+  margin-top: 30px;
+}
+// MARK: - CSS for Edit User End
 
 // MARK: - Debug Start
 .debug-border {
