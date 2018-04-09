@@ -12,6 +12,11 @@ class IslandsController < ApplicationController
   def show
   end
 
+  def show_island
+    @island = Island.find(params[:show_island_id])
+    render :layout => 'application2'
+  end
+
   # GET /islands/new
   def new
     @island = Island.new

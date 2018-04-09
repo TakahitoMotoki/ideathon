@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get "hello/tutorial" => "hello#tutorial"
   get "hello/introduction" => "hello#introduction"
   get "hello/show_user/:show_user_id" => "hello#show_user", :as => "hello_show_user"
+  get "islands/show_island/:show_island_id" => "islands#show_island", :as => "islands_show_island"
 end

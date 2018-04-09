@@ -10,7 +10,7 @@
     </div>
     <div class="col-xs-5">
     </div>
-      <%= button_to "Edit", { :controller => "users/registrations", :action => "edit" }, :class => "col-xs-2 btn btn-success", :method => :get %>  
+      <%= button_to "Edit", { :controller => "users/registrations", :action => "edit" }, :class => "col-xs-2 btn btn-success", :method => :get %>
     <div class="col-xs-5">
     </div>
   </div>
@@ -33,7 +33,7 @@
       </div>
       <div class="col-xs-10 col-md-6 show-island-container debug-background2">
         <%= island.name %>
-      </div>
+        <%= link_to island.name, islands_show_island_path(island.id) %>      </div>
       <div class="col-xs-1 col-md-3">
       </div>
     <% end %>
