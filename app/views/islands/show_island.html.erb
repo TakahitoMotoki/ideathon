@@ -1,25 +1,77 @@
 <div class="container" style="padding-top:150px;">
+
   <div class="row show-top">
     <div class="col-xs-12 show-top-picture-container">
       <div class="show-top-picture debug-background">
 
       </div>
     </div>
-    <div class="col-xs-12 show-top-name">
+    <div class="col-xs-12 island-top-name">
       <%= @island.name %>
     </div>
   </div>
-  <div class="row show-profile">
-    <div class="col-xs-12 show-profile-name">
+
+  <div class="row island-follow">
+    <div class="col-xs-12 island-follow-name">
+      Resident : <%= "65" %>
+    </div>
+    <div class="col-xs-12 island-follow-list">
+    </div>
+  </div>
+  <div class="row island-profile">
+    <div class="col-xs-12 island-profile-name">
       Description
     </div>
-    <div class="col-xs-12 show-profile-desc">
+    <div class="col-xs-12 island-profile-desc">
       <%= @island.description %>
     </div>
   </div>
+
   <div class="row show-island">
     <div class="col-xs-12 show-island-name">
       Buildings
+    </div>
+    <div class="island-building-container">
+      <% @island.buildings.each do |building| %>
+        <div class="bcard">
+          <div class="bcard-top">
+            <div class="bcard-name">
+              <p class="bcard-island">
+                <b><%= building.title %></b><br>
+              </p>
+            </div>
+          </div>
+          <p class="bcard-text">
+            <%= building.description %>
+          </p>
+          <div class="bcard-image debug-background3">
+          </div>
+          <div class="bcard-button-container container">
+            <div class="row">
+              <div class="col-xs-4 btn">
+                Wanna Do!
+              </div>
+              <div class="col-xs-4 btn">
+                Like
+              </div>
+              <div class="col-xs-4 btn">
+                Comment
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4 counter">
+                5
+              </div>
+              <div class="col-xs-4 counter">
+                34
+              </div>
+              <div class="col-xs-4 counter">
+                12
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
